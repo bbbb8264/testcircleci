@@ -1,5 +1,3 @@
 dependencies:
   post:
-    - sudo cp /home/ubuntu/testcircleci/* /etc/apache2/sites-available
-    - sudo a2ensite site.conf
-    - sudo service apache2 restart
+    - sudo -r cp /home/ubuntu/testcircleci /var/www/html
