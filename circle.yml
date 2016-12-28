@@ -1,3 +1,7 @@
 dependencies:
   post:
     - sudo cp -r /home/ubuntu/testcircleci /var/www/html
+    - sudo apt-get install php5-mysqlnd
+    - sudo service mysql restart
+    - sudo mysql < db.sql
+    - sudo service apache2 restart
